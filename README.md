@@ -2,7 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
+## MongoDB 
+
+A [MongoDB](https://docs.mongodb.com/manual/tutorial/) database is required (running on `mongodb://localhost:27017/app`).
+The app will use a schema with name `app` and a collection with name `products`.
+
 ## Development server
+
+First run `npm install`.
 
 Run `ng serve --proxy-config proxy.config.json` for a Express server. Navigate to `http://localhost:8080/api/status`. The result will be `{"status":"UP"}`.
 
