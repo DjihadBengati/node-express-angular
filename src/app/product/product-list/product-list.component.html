@@ -1,0 +1,24 @@
+<h4>Products:</h4>
+
+<table *ngIf="products.length > 0" class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{ product.name }}</td>
+            <td>{{ product.brand }}</td>
+            <td> <a class="delete" (click)="delete(product._id)">Delete</a> </td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="products.length === 0" class="alert alert-info" role="info">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Information:</span>
+    The product collection is empty.
+</div>
