@@ -6,13 +6,13 @@ import { IProduct, Product } from './product.model';
     providedIn: 'root'
 })
 export class ProductService {
-    private statusUrl = '/api/products';
+    private productsUrl = '/api/products';
 
     constructor(private http: Http) { }
 
     // Get products
     get(): Promise<Array<IProduct>> {
-        return this.http.get(this.statusUrl)
+        return this.http.get(this.productsUrl)
             .toPromise()
             .then(response => response.json())
             .catch(this.error);
@@ -20,7 +20,7 @@ export class ProductService {
 
     // Create product
     create(product: Product): Promise<IProduct> {
-        return this.http.post(this.statusUrl, product)
+        return this.http.post(this.productsUrl, product)
             .toPromise()
             .then(response => response.json())
             .catch(this.error);
@@ -28,7 +28,7 @@ export class ProductService {
 
     // Delete a product
     delete(id: string): Promise<any> {
-        return this.http.delete(`${this.statusUrl}/${id}`)
+        return this.http.delete(`${this.productsUrl}/${id}`)
             .toPromise()
             .then(response => response.json())
             .catch(this.error);
