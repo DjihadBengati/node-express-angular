@@ -1,0 +1,23 @@
+{
+    "name": "MEAN Stack and Heroku",
+    "description": "Managing some Products and learning how to use MEAN stack and Heroku.",
+    "keywords": [
+        "MEAN",
+        "Angular",
+        "Node",
+        "MongoDB",
+        "Express",
+        "Heroku"
+    ],
+    "repository": "https://github.com/DjihadBengati/node-express-angular/tree/master",
+    "success_url": "/",
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "addons": [
+        "mongolab"
+    ]
+}
