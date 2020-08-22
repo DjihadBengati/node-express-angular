@@ -7,10 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --output-path dist"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^9.1.12",
+    "@angular/compiler-cli": "^9.1.12",
     "@angular/animations": "~9.1.6",
     "@angular/common": "~9.1.6",
     "@angular/compiler": "~9.1.6",
@@ -30,8 +33,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
-    "@angular/cli": "^9.1.12",
-    "@angular/compiler-cli": "^9.1.12",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",

@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
+## Deploy to Heroku
+
+You can deploy the application to Heroku with a single click:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/DjihadBengati/node-express-angular)
+
 ## MongoDB 
 
 A [MongoDB](https://docs.mongodb.com/manual/tutorial/) database is required (running on `mongodb://localhost:27017/app`).
